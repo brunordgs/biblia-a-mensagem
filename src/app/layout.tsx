@@ -8,6 +8,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/footer";
 import { MicrosoftClarityScript } from "@/scripts/microsoft-clarity";
 import { GoogleAnalyticsScript } from "@/scripts/google-analytics";
+import { GoogleAdsenseScript } from "@/scripts/google-adsense";
 
 const inter = Inter({ subsets: ["latin"], display: "swap" });
 
@@ -27,6 +28,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
     <html lang="pt-BR">
       <MicrosoftClarityScript />
       <GoogleAnalyticsScript />
+      <GoogleAdsenseScript />
       <body
         className={cn(
           inter.className,
